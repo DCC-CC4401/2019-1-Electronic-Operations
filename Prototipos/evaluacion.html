@@ -4,43 +4,52 @@
         <meta charset = "utf-8"/>
         <title> Ficha de evaluación </title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="styleEvaluacion.css"/>
         <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-primary fixed-top barra-navegacion">
             <button class="btn btn-primary"> <a href="landing.html"> Inicio </a></div>
-            <button class="btn btn-primary" id="boton-barra" style="margin-left: 85%"><a href="landing.html" class="fas fa-sign-out-alt">  Log Out  </a></button>
+            <button class="btn btn-primary" id="boton-barra" style="margin-left: 86%"><a href="landing.html" class="fas fa-sign-out-alt">  Log Out  </a></button>
         </nav>
-        <div style="padding-top: 50px">
-            <h1> [AABBBB] [Nombre del curso] </h1>
-            <div class="container row margen">
-                <div> [Nombre de la evaluación] </div>
-                <div> Tiempo de duración [MM:SS] </div>
-            </div>
-            <div class="container row margen">
-                <div> Evaluadores : </div>
-                <ul>
-                    <li> Evaluador 1 (1) </li>
-                    <li> Evaluador 2 (2) </li>
-                    <li> Evaluador 3 (3) </li>
-                </ul>
-            </div>
+        <div class="first_div">
+            <h1 class="borde"> [AABBBB] [Nombre del curso] </h1>
+            <table class="container borde">
+                <tr class="row">
+                    <td class="col-2-3"> <h4>[Nombre de la evaluación] </h4></td>
+                    <td class="col-4"></td>
+                    <td class="col-5-6"> <h4>Tiempo de duración [MM:SS] </h4></td>
+                </tr>
+            </table>
+            <table class="container borde">
+                <tr class="row">
+                    <td class="col-1-2"> Evaluadores : </td>
+                    <td class="col-3"></td>
+                    <td class="col-4">
+                        <li> Evaluador 1 (1) </li>
+                        <li> Evaluador 2 (2) </li>
+                        <li> Evaluador 3 (3) </li>
+                    </td>
+                </tr>
+            </table>
         </div>
         <div>
             <h2> Grupo [XX]: [Nombre del grupo] </h2>
-            <div class="container row margen">
-                <div> Integrantes : </div>
-                <ul>
-                    <li> Alumno 1 </li>
-                    <li> Alumno 2 </li>
-                    <li> Alumno 3 </li>
-                    <li> Alumno 4 </li>
-                </ul>
-            </div>
+            <table class="container borde">
+                <tr class="row">
+                    <td class="col-1-2"> Integrantes : </td>
+                    <td class="col-3"></td>
+                    <td class="col-4">
+                        <li> Alumno 1 </li>
+                        <li> Alumno 2 </li>
+                        <li> Alumno 3 </li>
+                        <li> Alumno 4 </li>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <table class="container margen menu-principal bg-light">
+        <table class="container menu-principal bg-light">
             <tr>
                 <th> Aspecto a evaluar </th>
                 <th> (1) </th>
@@ -98,7 +107,7 @@
                 <td> P. Curso 6 </td>
             </tr>
         </table>
-        <a class="margen" href="https://www.u-cursos.cl/ingenieria/2019/1/CC4401/1/material_docente/"> Descargar rúbrica </a>
+        <a class="" href="https://www.u-cursos.cl/ingenieria/2019/1/CC4401/1/material_docente/"> Descargar rúbrica </a>
         <nav class="navbar navbar-expand-sm bg-primary fixed-bottom"></nav>
     </body>
 </html>

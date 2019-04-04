@@ -1,0 +1,24 @@
+.barra-navegacion a{
+    color: white;
+    padding: 10px;
+}
+.borde{
+    border-bottom: 2px solid gray;
+    margin-bottom: 20px;
+  }
+.first_div{
+    padding-top: 50px; 
+}
+.margen div{
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 5%;
+}
+.menu-principal{
+    margin-top: 3.5%;
+    margin-bottom: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 20px;
+    border: 2px solid gray;
+  }
