@@ -1,70 +1,90 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.css">
+        <link rel="stylesheet" href="style.css">
         <meta charset = UTF-8/>
         <title> Rúbrica de Evaluación </title>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li> <a href="index.html"> Inicio </a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
+            <ul class="nav">
+                <li class = ""> <a href="index.html"> Inicio </a></li>
                 <li> <a href="index.html"> Salir </a></li>
             </ul>
         </nav>
-        <table>
-            <tr>
-                <th></th>
-                <th> 0.0 </th>
-                <th> 0.3 </th>
-                <th> 0.5 </th>
-                <th> 0.7 </th>
-                <th> 1.0 </th>
-            </tr>
-            <tr>
-                <td> Aspecto 1 </td>
-                <td> Nivel a </td>
-                <td> Nivel b </td>
-                <td> Nivel c </td>
-                <td> Nivel d </td>
-                <td> Nivel e </td>
-            </tr>
-            <tr>
-                <td> Aspecto 2 </td>
-                <td> Nivel a </td>
-                <td> Nivel b </td>
-                <td> Nivel c </td>
-                <td> Nivel d </td>
-            </tr>
-            <tr>
-                <td> Aspecto 3 </td>
-                <td> Nivel a </td>
-                <td> Nivel b </td>
-                <td> Nivel c </td>
-                <td> Nivel d </td>
-                <td> Nivel e </td>
-            </tr>
-            <tr>
-                <td> Aspecto 4 </td>
-                <td> Nivel a </td>
-                <td> Nivel b </td>
-                <td> Nivel c </td>
-            </tr>
-            <tr>
-                <td> Aspecto 5 </td>
-                <td> Nivel a </td>
-                <td> Nivel b </td>
-                <td> Nivel c </td>
-                <td> Nivel d </td>
-                <td> Nivel e </td>
-            </tr>
-            <tr>
-                <td> Aspecto 6 </td>
-                <td> Nivel a </td>
-                <td> Nivel b </td>
-            </tr>
-        </table>
-        <a href="rubrica.html"> Agregar </a>
-        <table>
+        <div class="rubrica container-fluid">
+            <div class="row">
+                <div class="col-10">
+                    <table class=" tabla table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Ambito</th>
+                            <th scope="col"> 0.0 </th>
+                            <th scope="col"> 0.3 </th>
+                            <th scope="col"> 0.5 </th>
+                                <th scope="col"> 0.7 </th>
+                                <th scope="col"> 1.0 </th>
+                            </tr>
+                        </thead>
+                    
+                        <tr>
+                            <td> Aspecto 1 </td>
+                            <td> Nivel a </td>
+                            <td> Nivel b </td>
+                            <td> Nivel c </td>
+                            <td> Nivel d </td>
+                            <td> Nivel e </td>
+                        </tr>
+                        <tr>
+                            <td> Aspecto 2 </td>
+                            <td> Nivel a </td>
+                            <td> Nivel b </td>
+                            <td> Nivel c </td>
+                            <td> Nivel d </td>
+                            <td class="table-secondary"></td>
+                        </tr>
+                        <tr>
+                            <td> Aspecto 3 </td>
+                            <td> Nivel a </td>
+                            <td> Nivel b </td>
+                            <td> Nivel c </td>
+                            <td> Nivel d </td>
+                            <td> Nivel e </td>
+                        </tr>
+                        <tr>
+                            <td> Aspecto 4 </td>
+                            <td> Nivel a </td>
+                            <td> Nivel b </td>
+                            <td> Nivel c </td>
+                            <td class="table-secondary"></td>
+                            <td class="table-secondary"></td>
+                        </tr>
+                        <tr>
+                            <td> Aspecto 5 </td>
+                            <td> Nivel a </td>
+                            <td> Nivel b </td>
+                            <td> Nivel c </td>
+                            <td> Nivel d </td>
+                            <td> Nivel e </td>
+                        </tr>
+                        <tr>
+                            <td> Aspecto 6 </td>
+                            <td> Nivel a </td>
+                            <td> Nivel b </td>
+                            <td class="table-secondary"></td>
+                            <td class="table-secondary"></td>
+                            <td class="table-secondary"></td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="col-2"></div>
+            </div>
+        </div>
+        <button class="btn btn-success"> Agregar <i></i> </button>
+        <div>
+        <table class="table">
             <tr> 
                 <td> Tiempo mínimo </td>
                 <td> Tiempo máximo </td>
@@ -74,5 +94,6 @@
                 <td> MM:SS </td>
             </tr>
         </table>
+        <nav class="navbar navbar-expand-sm bg-primary fixed-bottom"></nav>
     </body>
 </html>
