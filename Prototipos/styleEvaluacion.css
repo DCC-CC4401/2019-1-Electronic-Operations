@@ -1,0 +1,9 @@
+.barra-navegacion a{
+    color: white;
+    padding: 10px;
+}
+.margen div{
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 5%;
+}
