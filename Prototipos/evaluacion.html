@@ -5,24 +5,26 @@
         <title> Ficha de evaluación </title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="styleEvaluaciones.css"/>
+        <link rel="stylesheet" href="styleEvaluacion.css"/>
         <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-primary fixed-top barra-navegacion">
             <button class="btn btn-primary"> <a href="landing.html"> Inicio </a></div>
-            <button class="btn btn-primary" id="boton-barra" style="margin-left: 85%"><a href="landing.html" class="fas fa-sign-out-alt">  Log Out  </a></button>
+            <button class="btn btn-primary" id="boton-barra" style="margin-left: 86%"><a href="landing.html" class="fas fa-sign-out-alt">  Log Out  </a></button>
         </nav>
-        <div style="padding-top: 50px">
+        <div class="first_div">
             <h1> [AABBBB] [Nombre del curso] </h1>
-            <div class="container row margen">
-                <div> [Nombre de la evaluación] </div>
-                <div> Tiempo de duración [MM:SS] </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-1"> [Nombre de la evaluación] </div>
+                    <div class="col-2"> Tiempo de duración [MM:SS] </div>
+                </div>
             </div>
-            <div class="container row margen">
-                <div> Evaluadores : </div>
-                <ul>
+            <div class="container row">
+                <div class="col-2"> Evaluadores : </div>
+                <ul class="col-4">
                     <li> Evaluador 1 (1) </li>
                     <li> Evaluador 2 (2) </li>
                     <li> Evaluador 3 (3) </li>
