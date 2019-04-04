@@ -6,8 +6,11 @@
     border-bottom: 2px solid gray;
     margin-bottom: 20px;
   }
-.first_div{
+#first_div{
     padding-top: 50px; 
+}
+#last_div{
+    padding-bottom: 20px;
 }
 div{
     margin-left: 5%; 
