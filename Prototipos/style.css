@@ -1,77 +1,53 @@
 .menu-principal{
-    margin-top: 3.5%;
-    margin-bottom: 50px;
-    margin-left: 30%;
-    margin-right: 30%;
-    border-radius: 20px;
-    border: 2px solid gray;
+  margin-top: 3.5%;
+  margin-bottom: 50px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 20px;
+  border: 2px solid gray;
 }
 .borde{
-    border-bottom: 2px solid gray;
+  border-bottom: 2px solid gray;
 }
 #nombre-profe{
-    color: white;
+  color: white;
 }
 .botones{
-    position: relative;
-    right: 25px;
-    bottom: 20px;
+  position: relative;
+  right: 25px;
+  bottom: 20px;
+  overflow: auto;
 }
-
-
-.box {border:2px solid #22913a;}
-.box h2 {background:#22913a;color:white;padding:10px;}
-.box p {color:#333;padding:10px;}
-.box {
-    margin-top:80px;
-    height: 280px;
-    -moz-border-radius-topright:5px;
-    -moz-border-radius-topleft:5px;
-    -webkit-border-top-right-radius:5px;
-    -webkit-border-top-left-radius:5px;
+#imagen-notas{
+  height: 100px;
+  width: 110px;
+  object-fit: fill;
 }
-.box.Lista{
-    height: auto;
+#imagen-postulaciones{
+  height: 100px;
 }
-
-
-  .ad-left {
-
-    float: left;
-    margin-left:100px;
-    width: 350px;
-  }
-  
-  .ad-right {
-
-    float: right;
-    margin-right:80px;
-    width: 350px;
-    
-  }
-  .ad-center {
-
-    float: center;
-    margin:0 auto;
-    width: 350px;
-  }
-  
-  .entire-thing {
-    margin-top:50px;
-    border-radius: 20px;
-    border: 1px solid white;
-    width: 100%;
-    
-  }
-.Fondo{
-    display: table-cell; vertical-align: bottom;
+#imagen-gestion{
+  height: 100px;
+}
+#imagen-cursos{
+  height: 100px;
+}
+#imagen-tareas{
+  height: 90px;
+}
+.cargos{
+  width: 19px;
+  height: 19px;
+}
+.ayudante{
+  background: url("Imagenes/iconos_ucursos.png") 0 -133px;   
+}
+.auxiliar{
+  background: url("Imagenes/iconos_ucursos.png") 0 -760px;
+}
+.coordinador{
+  background: url("Imagenes/iconos_ucursos.png") 0 -817px;
 }
 .invitado{
-    background: url("Imagenes/iconos_ucursos.png") 0 -950px;
-}
-.profesor{
-    background: url("Imagenes/iconos_ucursos.png") 0 -836px;
-}
-.no-bullet-list{
-    list-style-type: none;
+  background: url("Imagenes/iconos_ucursos.png") 0 -950px;
 }
