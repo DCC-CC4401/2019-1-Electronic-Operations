@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+            <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
         <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.css">
         <link rel="stylesheet" href="style.css">
@@ -9,14 +10,15 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
-            <ul class="nav">
-                <li class = ""> <a href="index.html"> Inicio </a></li>
-                <li> <a href="index.html"> Salir </a></li>
-            </ul>
+                <div><button class="btn btn-primary"> Inicio <i class="fas fa-home"></i></button>
+                <button class="btn btn-primary">Link 2</button>
+                <button class="btn btn-primary">Link 3</button>
+                </div>
+                <button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button>
         </nav>
         <div class="rubrica container-fluid">
             <div class="row">
-                <div class="col-10">
+                <div class="col-10 text-center">
                     <table class=" tabla table table-bordered table-hover">
                     <thead>
                         <tr>
@@ -82,18 +84,29 @@
                     <div class="col-2"></div>
             </div>
         </div>
-        <button class="btn btn-success"> Agregar <i></i> </button>
-        <div>
-        <table class="table">
-            <tr> 
-                <td> Tiempo mínimo </td>
-                <td> Tiempo máximo </td>
-            </tr>
-            <tr>
-                <td> MM:SS </td>
-                <td> MM:SS </td>
-            </tr>
-        </table>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1">
+                <button class="btn btn-success"> Agregar <i></i> </button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <table class="table table-bordered">
+                <tr> 
+                    <td> Tiempo mínimo </td>
+                    <td> Tiempo máximo </td>
+                </tr>
+                <tr>
+                    <td>MM:SS </td>
+                    <td> MM:SS </td>
+                </tr>
+            </table>
+            </div>
+        </div>
         <nav class="navbar navbar-expand-sm bg-primary fixed-bottom"></nav>
     </body>
 </html>

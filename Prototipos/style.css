@@ -9,7 +9,7 @@
 .borde{
   border-bottom: 2px solid gray;
 }
-#nombre-profe{
+.letra-blanca{
   color: white;
 }
 .botones{
@@ -52,5 +52,5 @@
   background: url("Imagenes/iconos_ucursos.png") 0 -950px;
 }
 .rubrica{
-  margin-top: 3%;
+  margin-top: 4%;
 }
