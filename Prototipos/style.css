@@ -12,7 +12,7 @@
 .letra-blanca{
   color: white;
 }
-.letra-blanca a{
+.letra-blanca button > a{
   color: white;
 }
 .botones{
