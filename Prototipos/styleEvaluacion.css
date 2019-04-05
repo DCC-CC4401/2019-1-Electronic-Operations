@@ -1,8 +1,4 @@
-.barra-navegacion a{
-    color: white;
-    padding: 10px;
-}
-.borde{
+.borde-m{
     border-bottom: 2px solid gray;
     margin-bottom: 20px;
   }
@@ -13,5 +9,5 @@
     padding-bottom: 20px;
 }
 div{
-    margin-left: 5%; 
+    margin-left: 2%; 
 }
