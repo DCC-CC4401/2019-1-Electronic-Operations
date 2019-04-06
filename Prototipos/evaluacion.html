@@ -11,52 +11,72 @@
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     </head>
     <body>
+        <!--Barra de Navegacion con links a ninguna parte-->
         <nav class="letra-blanca navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
             <nav>
-                <button class="btn btn-primary"><a href="landing.html"> Inicio </a><i class="fas fa-home"></i></button>
-                <button class="btn btn-primary"><a href="landing.html"> Evaluadores </a></button>
-                <button class="btn btn-primary"><a href="landing.html"> Cursos </a></button>
-                <button class="btn btn-primary"><a href="FichaEvaluacion.html"> Fichas de evaluación </a></button>
-                <button class="btn btn-primary"><a href="EvaluacionResumenes.html"> Resumenes de evaluación </a></button>
+                <button class="btn btn-primary"> Inicio <i class="fas fa-home"></i></button>
+                <button class="btn btn-primary"> Evaluadores <i class="far fa-address-book"></i> </button>
+                <button class="btn btn-primary"> Cursos  <i class="fas fa-graduation-cap"></i></button>
+                <button class="btn btn-primary">Fichas de evaluación <i class="far fa-clipboard"></i> </button>
+                <button class="btn btn-primary"> Resumenes de evaluación <i class="far fa-list-alt"></i></button>
             </nav>
             <button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button>
         </nav>
+        <!--Ficha de resumen de la evaluacion-->
+        <div class="menu-principal">
         <div id="first_div">
-            <h1 class="borde-m"> [AABBBB] [Nombre del curso] </h1>
-            <table class="container borde-m">
-                <tr class="row">
-                    <td class="col-2-3"> <h4>[Nombre de la evaluación] </h4></td>
-                    <td class="col-4"></td>
-                    <td class="col-5-6"> <h4>Tiempo de duración [MM:SS] </h4></td>
-                </tr>
-            </table>
-            <table class="container borde-m">
-                <tr class="row">
-                    <td class="col-1-2"> Evaluadores : </td>
-                    <td class="col-3"></td>
-                    <td class="col-4">
-                        <li> Evaluador 1 (1) </li>
-                        <li> Evaluador 2 (2) </li>
-                        <li> Evaluador 3 (3) </li>
-                    </td>
-                </tr>
-            </table>
+            <h1 class="borde text-center"> [AABBBB] [Nombre del curso] </h1>
+            <div class="container-fluid borde">
+                <div class="row">
+                    <div class="col-6"> 
+                        <h3>[Nombre de la evaluación] </h3>
+                    </div>
+                    <div class="col-3"><span> Evaluadores : </span></div>
+                </div>
+                <div class="row">
+                    <div class="col-6"> <h4>Tiempo de duración: [MM:SS] </h4></div>
+                    <div class="col-5">
+                            <ul class="list-group ">
+                                    <li class="list-group-item"> Evaluador 1 (1) </li>
+                                    <li class="list-group-item"> Evaluador 2 (2) </li>
+                                    <li class="list-group-item"> Evaluador 3 (3) </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2> Grupo [XX]: [Nombre del grupo] </h2>
-            <table class="container borde-m">
-                <tr class="row">
-                    <td class="col-1-2"> Integrantes : </td>
-                    <td class="col-3"></td>
-                    <td class="col-4">
-                        <li> Alumno 1 </li>
-                        <li> Alumno 2 </li>
-                        <li> Alumno 3 </li>
-                        <li> Alumno 4 </li>
-                    </td>
-                </tr>
-            </table>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-10 "><h2> Grupo [XX]: [Nombre del grupo] </h2></div>
+            </div>
+            <div>
+            <div class="row"></div>
+                    <div class="col-4"> 
+                    <table class="table-sm table-borderless">
+                        <thead>
+                            <tr>
+                                <th>Integrantes:</th>
+                            </tr>
+                        </thead>
+                        <tr class="text-center">
+                            <td>Alumno 1</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Alumno 2</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Alumno 3</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Alumno 4</td>
+                        </tr>
+                    </table>
+                    </div>
+            </div>
         </div>
+    </div>
+        <!--Tabla de la evaluacion-->
         <div class="container-fluid">
             <div class="row">
                 <div class="col-10">
@@ -120,8 +140,9 @@
                     </table>
                 </div>
             </div>
+            <button class="btn btn-primary">Descargar rubrica <i class="fas fa-arrow-circle-down"></i></button>
         </div>
-        <div id="last_div"><a href="https://www.u-cursos.cl/ingenieria/2019/1/CC4401/1/material_docente/"> Descargar rúbrica </a></div>
+        <div id="last_div" style="margin-left:1%;"></div>
         <nav class="navbar navbar-expand-sm bg-primary fixed-bottom"></nav>
     </body>
 </html>
