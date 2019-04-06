@@ -12,6 +12,9 @@
 .letra-blanca{
   color: white;
 }
+.letra-blanca button > a{
+  color: white;
+}
 .botones{
   position: relative;
   right: 25px;

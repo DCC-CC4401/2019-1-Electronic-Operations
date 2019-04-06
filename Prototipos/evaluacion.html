@@ -4,25 +4,33 @@
         <meta charset = "utf-8"/>
         <title> Ficha de evaluación </title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="styleEvaluacion.css"/>
         <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-primary fixed-top barra-navegacion">
-            <button class="btn btn-primary"> <a href="landing.html"> Inicio </a></div>
-            <button class="btn btn-primary" id="boton-barra" style="margin-left: 86%"><a href="landing.html" class="fas fa-sign-out-alt">  Log Out  </a></button>
+        <nav class="letra-blanca navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
+            <nav>
+                <button class="btn btn-primary"><a href="landing.html"> Inicio </a><i class="fas fa-home"></i></button>
+                <button class="btn btn-primary"><a href="landing.html"> Evaluadores </a></button>
+                <button class="btn btn-primary"><a href="landing.html"> Cursos </a></button>
+                <button class="btn btn-primary"><a href="FichaEvaluacion.html"> Fichas de evaluación </a></button>
+                <button class="btn btn-primary"><a href="EvaluacionResumenes.html"> Resumenes de evaluación </a></button>
+            </nav>
+            <button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button>
         </nav>
-        <div class="first_div">
-            <h1 class="borde"> [AABBBB] [Nombre del curso] </h1>
-            <table class="container borde">
+        <div id="first_div">
+            <h1 class="borde-m"> [AABBBB] [Nombre del curso] </h1>
+            <table class="container borde-m">
                 <tr class="row">
                     <td class="col-2-3"> <h4>[Nombre de la evaluación] </h4></td>
                     <td class="col-4"></td>
                     <td class="col-5-6"> <h4>Tiempo de duración [MM:SS] </h4></td>
                 </tr>
             </table>
-            <table class="container borde">
+            <table class="container borde-m">
                 <tr class="row">
                     <td class="col-1-2"> Evaluadores : </td>
                     <td class="col-3"></td>
@@ -36,7 +44,7 @@
         </div>
         <div>
             <h2> Grupo [XX]: [Nombre del grupo] </h2>
-            <table class="container borde">
+            <table class="container borde-m">
                 <tr class="row">
                     <td class="col-1-2"> Integrantes : </td>
                     <td class="col-3"></td>
@@ -49,65 +57,71 @@
                 </tr>
             </table>
         </div>
-        <table class="container menu-principal bg-light">
-            <tr>
-                <th> Aspecto a evaluar </th>
-                <th> (1) </th>
-                <th> (2) </th>
-                <th> (3) </th>
-                <th> Promedio </th>
-                <th> Promedio del curso </th>
-            </tr>
-            <tr>
-                <td> Aspecto 1 </td>
-                <td> P11 </td>
-                <td> P12 </td>
-                <td> P13 </td>
-                <td> Prom 1 </td>
-                <td> P. Curso 1 </td>
-            </tr>
-            <tr>
-                <td> Aspecto 2 </td>
-                <td> P21 </td>
-                <td> P22 </td>
-                <td> P23 </td>
-                <td> Prom 2 </td>
-                <td> P. Curso 2 </td>
-            </tr>
-            <tr>
-                <td> Aspecto 3 </td>
-                <td> P31 </td>
-                <td> P32 </td>
-                <td> P33 </td>
-                <td> Prom 3 </td>
-                <td> P. Curso 3 </td>
-            </tr>
-            <tr>
-                <td> Aspecto 4 </td>
-                <td> P41 </td>
-                <td> P42 </td>
-                <td> P43 </td>
-                <td> Prom 4 </td>
-                <td> P. Curso 4 </td>
-            </tr>
-            <tr>
-                <td> Aspecto 5 </td>
-                <td> P51 </td>
-                <td> P52 </td>
-                <td> P53 </td>
-                <td> Prom 5 </td>
-                <td> P. Curso 5 </td>
-            </tr>
-            <tr>
-                <td> Aspecto 6 </td>
-                <td> P61 </td>
-                <td> P62 </td>
-                <td> P63 </td>
-                <td> Prom 6 </td>
-                <td> P. Curso 6 </td>
-            </tr>
-        </table>
-        <a class="" href="https://www.u-cursos.cl/ingenieria/2019/1/CC4401/1/material_docente/"> Descargar rúbrica </a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th scope="col"> Aspecto a evaluar</th>
+                            <th scope="col"> (1) </th>
+                            <th scope="col"> (2) </th>
+                            <th scope="col"> (3) </th>
+                            <th scope="col"> Promedio </th>
+                            <th scope="col"> Promedio del curso </th>
+                        </tr>
+                        <tr>
+                            <td> Aspecto 1 </td>
+                            <td> P11 </td>
+                            <td> P12 </td>
+                            <td> P13 </td>
+                            <td> Prom 1 </td>
+                            <td> P. Curso 1 </td>
+                        </tr>
+                        <tr>
+                            <td> Aspecto 2 </td>
+                            <td> P21 </td>
+                            <td> P22 </td>
+                            <td> P23 </td>
+                            <td> Prom 2 </td>
+                            <td> P. Curso 2 </td>
+                        </tr>
+                        <tr>
+                            <td> Aspecto 3 </td>
+                            <td> P31 </td>
+                            <td> P32 </td>
+                            <td> P33 </td>
+                            <td> Prom 3 </td>
+                            <td> P. Curso 3 </td>
+                        </tr>
+                        <tr>
+                            <td> Aspecto 4 </td>
+                            <td> P41 </td>
+                            <td> P42 </td>
+                            <td> P43 </td>
+                            <td> Prom 4 </td>
+                            <td> P. Curso 4 </td>
+                        </tr>
+                        <tr>
+                            <td> Aspecto 5 </td>
+                            <td> P51 </td>
+                            <td> P52 </td>
+                            <td> P53 </td>
+                            <td> Prom 5 </td>
+                            <td> P. Curso 5 </td>
+                        </tr>
+                        <tr>
+                            <td> Aspecto 6 </td>
+                            <td> P61 </td>
+                            <td> P62 </td>
+                            <td> P63 </td>
+                            <td> Prom 6 </td>
+                            <td> P. Curso 6 </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="last_div"><a href="https://www.u-cursos.cl/ingenieria/2019/1/CC4401/1/material_docente/"> Descargar rúbrica </a></div>
         <nav class="navbar navbar-expand-sm bg-primary fixed-bottom"></nav>
     </body>
 </html>
