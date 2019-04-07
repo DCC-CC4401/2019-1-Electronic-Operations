@@ -21,7 +21,7 @@
                 </nav>
         <div class="rubrica container-fluid">
             <div class="row">
-                <div class="col-10 text-center">
+                <div class="col-11 text-center">
                     <table class=" tabla table table-bordered table-hover">
                     <thead>
                         <tr>
@@ -41,6 +41,12 @@
                             <td> <textarea class="form-control" type="text" placeholder="Nivel c"></textarea></td>
                             <td> <textarea class="form-control" type="text" placeholder="Nivel d"></textarea></td>
                             <td> <textarea class="form-control" type="text" placeholder="Nivel e"></textarea></td>
+                            <td style="border:none;">
+                                <div class="btn-group">
+                                <button class="btn btn-secondary" disabled><i class="fas fa-plus-circle"></i></button>
+                                <button class="btn btn-danger"><i class="fas fa-minus-circle"></i></button>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td> <input class="form-control"  type="text" placeholder="Aspecto 2"></td>
@@ -49,6 +55,13 @@
                             <td> <textarea class="form-control" type="text" placeholder="Nivel c"></textarea></td>
                             <td> <textarea class="form-control" type="text" placeholder="Nivel d"></textarea></td>
                             <td class="table-secondary"></td>
+                            <td style="border:none;">
+                                <div class="btn-group">
+                                    <button class="btn btn-success"><i class="fas fa-plus-circle"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-minus-circle"></i></button>
+                                </div>
+                                    
+                            </td>
                         </tr>
                         <tr>
                             <td> <input class="form-control"  type="text" placeholder="Aspecto 3"></td>
@@ -57,6 +70,12 @@
                             <td> <textarea class="form-control" type="text" placeholder="Nivel c"></textarea></td>
                             <td> <textarea class="form-control" type="text" placeholder="Nivel d"></textarea></td>
                             <td> <textarea class="form-control" type="text" placeholder="Nivel e"></textarea></td>
+                            <td style="border:none;">
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary" disabled><i class="fas fa-plus-circle"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-minus-circle"></i></button>
+                                </div>
+                                </td>
                         </tr>
                         <tr>
                             <td> <input class="form-control"  type="text" placeholder="Aspecto 4"> </td>
@@ -65,6 +84,12 @@
                             <td> <textarea class="form-control" type="text" placeholder="Nivel c"></textarea> </td>
                             <td class="table-secondary"></td>
                             <td class="table-secondary"></td>
+                            <td style="border:none;">
+                                <div class="btn-group">
+                                    <button class="btn btn-success" ><i class="fas fa-plus-circle"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-minus-circle"></i></button>
+                                </div>
+                                </td>
                         </tr>
                         <tr>
                             <td> <input class="form-control"  type="text" placeholder="Aspecto 5"></td>
@@ -73,6 +98,12 @@
                             <td> <textarea class="form-control" type="text" placeholder="Nivel c"></textarea> </td>
                             <td> <textarea class="form-control" type="text" placeholder="Nivel d"></textarea></td>
                             <td> <textarea class="form-control" type="text" placeholder="Nivel e"></textarea></td>
+                            <td style="border:none;">
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary" disabled><i class="fas fa-plus-circle"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-minus-circle"></i></button>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td> <input class="form-control"  type="text" placeholder="Aspecto 6"> </td>
@@ -81,14 +112,20 @@
                             <td class="table-secondary"></td>
                             <td class="table-secondary"></td>
                             <td class="table-secondary"></td>
+                            <td style="border:none;">
+                                <div class="btn-group">
+                                    <button class="btn btn-success"><i class="fas fa-plus-circle"></i></button>
+                                    <button class="btn btn-danger"><i class="fas fa-minus-circle"></i></button>
+                                </div>
+                            </td>
                         </tr>
                     </table>
                     </div>
-                    <div class="col-2">
+                    <div class="col-1">
                     </div>
             </div>
             <div>
-                <button type="button" class="btn btn-success">Agregar Aspecto <i class="fas fa-plus-circle"></i> </button>
+                <button type="button" class="btn btn-success">Agregar Aspecto <i class="fas fa-plus-circle"></i></button>
                 <button class="btn btn-danger">Eliminar Aspecto <i class="fas fa-minus-circle"></i></button>
             </div>
         </div>
@@ -96,7 +133,11 @@
         
         <div class="container-fluid">
             <div class="row">
-            <div class="col-4"></div>
+            <div class="col-4" style="padding-top:30px;">
+                <button class="btn btn-info">Guardar y Terminar <i class="	far fa-check-circle"></i></button>
+                <button class="btn btn-warning">Guardar Rubrica <i class="far fa-save"></i></button>
+                <button class="btn btn-danger">Terminar sin guardar <i class="far fa-times-circle"></i></button>
+            </div>
             <div class="col-4">
                 <table class="table table-bordered table-hove text-center">
                 <thead>
@@ -106,18 +147,48 @@
                 </tr>
             </thead>
                 <tr>
-                    <td> <select class="form-control-sm" name="tiempo-min-minutos" id="tiempo-min-minutos"></select>
-                    </select>:<select class="form-control-sm" name="tiempo-min-segundos" id="tiempo-min-segundos"></select></td>
-                    <td><select class="form-control-sm"  name="tiempo-max-minutos" id="tiempo-max-minutos"></select>
-                        :<select class="form-control-sm" name="tiempo-max-segundos" id="tiempo-max-segundos"></select> </td>
+                    <td>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-3">
+                                <span>MM</span>
+                            </div>
+                            <div class="col-2">
+                                <span>SS</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class=col-6> 
+                            <select class="form-control-sm" name="tiempo-min-minutos" id="tiempo-min-minutos"></select>
+                            </select>: <select class="form-control-sm" name="tiempo-min-segundos" id="tiempo-min-segundos"></select></td>
+                            </div>
+                        </div>
+                    </div>
+                    <td>
+                        <div class="container-fluid">
+                            <div class="row">
+                                    <div class="col-3"></div>
+                                    <div class="col-3">
+                                        <span>MM</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>SS</span>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <select class="form-control-sm"  name="tiempo-max-minutos" id="tiempo-max-minutos"></select>
+                                :<select class="form-control-sm" name="tiempo-max-segundos" id="tiempo-max-segundos"></select>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
             </table>
             </div>
         </div>
-        <div class="btn-group">
-            <button class="btn btn-info">Terminar Edición <i class="far fa-times-circle"></i></button>
-            <button class="btn btn-warning">Guardar Rubrica <i class="far fa-save"></i></button>
-        </div>
+        
         <div style="padding-top:10px;">
             <button class="btn btn-primary">Pagina Anterior <i class="far fa-arrow-alt-circle-left"></i></button>
         </div>

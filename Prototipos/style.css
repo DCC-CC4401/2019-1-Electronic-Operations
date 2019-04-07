@@ -38,21 +38,8 @@
 #imagen-tareas{
   height: 90px;
 }
-.cargos{
-  width: 19px;
-  height: 19px;
-}
-.ayudante{
-  background: url("Imagenes/iconos_ucursos.png") 0 -133px;   
-}
-.auxiliar{
-  background: url("Imagenes/iconos_ucursos.png") 0 -760px;
-}
-.coordinador{
-  background: url("Imagenes/iconos_ucursos.png") 0 -817px;
-}
-.invitado{
-  background: url("Imagenes/iconos_ucursos.png") 0 -950px;
+.modificar-nivel{
+  border: none;
 }
 .rubrica{
   margin-top: 4%;
