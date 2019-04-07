@@ -57,3 +57,16 @@
 .rubrica{
   margin-top: 4%;
 }
+/*borde con margen*/
+.borde-m{
+  border-bottom: 2px solid gray;
+  margin-bottom: 20px;
+}
+/*Padding del primer div para que no quede bajo navbar superior*/
+#first_div{
+  padding-top: 50px; 
+}
+/*Padding del ultimo div para que no quede bajo navbar inferior*/
+#last_div{
+  padding-bottom: 20px;
+}
