@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.css">
+        <link rel="stylesheet" href="style.css">
+        <meta charset = UTF-8/>
+        <title> Rúbrica de Evaluación </title>
+    </head>
+    <body>
+            <nav class="letra-blanca navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
+                    <nav>
+                        <button class="btn btn-primary"> Inicio <i class="fas fa-home"></i></button>
+                        <button class="btn btn-primary"> Evaluadores <i class="far fa-address-book"></i> </button>
+                        <button class="btn btn-primary"> Cursos  <i class="fas fa-graduation-cap"></i></button>
+                        <button class="btn btn-primary">Fichas de evaluación <i class="far fa-clipboard"></i> </button>
+                        <button class="btn btn-primary"> Resumenes de evaluación <i class="far fa-list-alt"></i></button>
+                    </nav>
+                    <button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button>
+                </nav>
+        <div class="rubrica container-fluid">
+            <div class="row">
+                <div class="col-10 text-center">
+                    <table class=" tabla table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Ambito</th>
+                            <th scope="col"> 0.0 </th>
+                            <th scope="col"> 0.3 </th>
+                            <th scope="col"> 0.5 </th>
+                            <th scope="col"> 0.7 </th>
+                            <th scope="col"> 1.0 </th>
+                        </tr>
+                    </thead>
+                    
+                        <tr>
+                            <td> <input class="form-control" type="text" placeholder="Aspecto 1"></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel a"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel b"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel c"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel d"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel e"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td> <input class="form-control"  type="text" placeholder="Aspecto 2"></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel a"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel b"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel c"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel d"></textarea></td>
+                            <td class="table-secondary"></td>
+                        </tr>
+                        <tr>
+                            <td> <input class="form-control"  type="text" placeholder="Aspecto 3"></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel a"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel b"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel c"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel d"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel e"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td> <input class="form-control"  type="text" placeholder="Aspecto 4"> </td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel a"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel b"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel c"></textarea> </td>
+                            <td class="table-secondary"></td>
+                            <td class="table-secondary"></td>
+                        </tr>
+                        <tr>
+                            <td> <input class="form-control"  type="text" placeholder="Aspecto 5"></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel a"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel b"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel c"></textarea> </td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel d"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel e"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td> <input class="form-control"  type="text" placeholder="Aspecto 6"> </td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel a"></textarea></td>
+                            <td> <textarea class="form-control" type="text" placeholder="Nivel b"></textarea> </td>
+                            <td class="table-secondary"></td>
+                            <td class="table-secondary"></td>
+                            <td class="table-secondary"></td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="col-2">
+                    </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-success">Agregar Aspecto <i class="fas fa-plus-circle"></i> </button>
+                <button class="btn btn-danger">Eliminar Aspecto <i class="fas fa-minus-circle"></i></button>
+            </div>
+        </div>
+        
+        
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <table class="table table-bordered table-hove text-center">
+                <thead>
+                    <tr> 
+                    <th> Tiempo mínimo </th>
+                    <th> Tiempo máximo </th>
+                </tr>
+            </thead>
+                <tr>
+                    <td> <select class="form-control-sm" name="tiempo-min-minutos" id="tiempo-min-minutos"></select>
+                    </select>:<select class="form-control-sm" name="tiempo-min-segundos" id="tiempo-min-segundos"></select></td>
+                    <td><select class="form-control-sm"  name="tiempo-max-minutos" id="tiempo-max-minutos"></select>
+                        :<select class="form-control-sm" name="tiempo-max-segundos" id="tiempo-max-segundos"></select> </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-info">Terminar Edición <i class="far fa-times-circle"></i></button>
+            <button class="btn btn-warning">Guardar Rubrica <i class="far fa-save"></i></button>
+        </div>
+        <div style="padding-top:10px;">
+            <button class="btn btn-primary">Pagina Anterior <i class="far fa-arrow-alt-circle-left"></i></button>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-primary fixed-bottom"></nav>
+    <script>
+        const min_minutos = document.querySelector("#tiempo-min-minutos");
+        const max_minutos = document.querySelector("#tiempo-max-minutos");
+        const min_segundos = document.querySelector("#tiempo-min-segundos");
+        const max_segundos = document.querySelector("#tiempo-max-segundos");
+        const valores = function(elemento,numero){
+            for(let i=0;i<=numero;i++){
+                let opcion = document.createElement("option");
+                let valor = document.createTextNode(`${i}`);
+                opcion.setAttribute("option",`${i}`)
+                opcion.appendChild(valor);
+                elemento.appendChild(opcion);
+            }
+        }
+        valores(min_minutos,20);
+        valores(max_minutos,20);
+        valores(min_segundos,59);
+        valores(max_segundos,59);
+    </script>
+    </body>
+</html>
