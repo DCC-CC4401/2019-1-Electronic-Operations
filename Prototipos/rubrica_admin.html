@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- 2.1.- Ficha de rúbrica (para el administrador) -->
 <html>
     <head>
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
@@ -9,30 +10,31 @@
         <title> Rúbrica de Evaluación </title>
     </head>
     <body>
-            <nav class="letra-blanca navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
-                    <nav>
-                        <button class="btn btn-primary"> Inicio <i class="fas fa-home"></i></button>
-                        <button class="btn btn-primary"> Evaluadores <i class="far fa-address-book"></i> </button>
-                        <button class="btn btn-primary"> Cursos  <i class="fas fa-graduation-cap"></i></button>
-                        <button class="btn btn-primary">Fichas de evaluación <i class="far fa-clipboard"></i> </button>
-                        <button class="btn btn-primary"> Resumenes de evaluación <i class="far fa-list-alt"></i></button>
-                    </nav>
-                    <button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button>
-                </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
+            <nav class="letra-blanca">
+                <button class="btn btn-primary"> Inicio <i class="fas fa-home"></i></button>
+                <button class="btn btn-primary"> Evaluadores <i class="far fa-address-book"></i> </button>
+                <button class="btn btn-primary"> Cursos  <i class="fas fa-graduation-cap"></i></button>
+                <button class="btn btn-primary"> Fichas de evaluación <i class="far fa-clipboard"></i> </button>
+                <button class="btn btn-primary"> Resumenes de evaluación <i class="far fa-list-alt"></i></button>
+            </nav>
+            <button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button>
+        </nav>
+
         <div class="rubrica container-fluid">
             <div class="row">
                 <div class="col-10 text-center">
                     <table class=" tabla table table-bordered table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">Ambito</th>
-                            <th scope="col"> 0.0 </th>
-                            <th scope="col"> 0.3 </th>
-                            <th scope="col"> 0.5 </th>
-                            <th scope="col"> 0.7 </th>
-                            <th scope="col"> 1.0 </th>
-                        </tr>
-                    </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Ambito</th>
+                                <th scope="col"> 0.0 </th>
+                                <th scope="col"> 0.3 </th>
+                                <th scope="col"> 0.5 </th>
+                                <th scope="col"> 0.7 </th>
+                                <th scope="col"> 1.0 </th>
+                            </tr>
+                        </thead>
                     
                         <tr>
                             <td> Aspecto 1 </td>
@@ -83,36 +85,38 @@
                             <td class="table-secondary"></td>
                         </tr>
                     </table>
+                </div>
+                <div class="col-2"></div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <table class="table table-bordered table-hove text-center">
+                            <thead>
+                                <tr> 
+                                    <th> Tiempo mínimo </th>
+                                    <th> Tiempo máximo </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>MM:SS </td>
+                                <td> MM:SS </td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="col-2"></div>
-            </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <button class="btn btn-info"><a href="rubrica_admin_edit.html"> Editar Rubrica </a><i class="fas fa-sync-alt"></i></button>
+                    </div>
+                    <div class="row" style="padding-top:10px;">
+                        <button class="btn btn-primary"> Pagina Anterior <i class="far fa-arrow-alt-circle-left"></i></button>
+                    </div>
+                </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4">
-                <table class="table table-bordered table-hove text-center">
-                <thead>
-                    <tr> 
-                    <th> Tiempo mínimo </th>
-                    <th> Tiempo máximo </th>
-                </tr>
-            </thead>
-                <tr>
-                    <td>MM:SS </td>
-                    <td> MM:SS </td>
-                </tr>
-            </table>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <button class="btn btn-info">Editar Rubrica <i class="fas fa-sync-alt"></i></button>
-            </div>
-            <div class="row" style="padding-top:10px;">
-                <button class="btn btn-primary">Pagina Anterior <i class="far fa-arrow-alt-circle-left"></i></button>
-            </div>
-        </div>
+
         <nav class="navbar navbar-expand-sm bg-primary fixed-bottom"></nav>
     </body>
 </html>

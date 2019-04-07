@@ -1,123 +1,94 @@
 <!DOCTYPE html>
+<!-- 4.- Ficha de evaluación (para el administrador) -->
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Evaluacion Resumenes Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="styleFichaEvaluación.css">
-    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-</head>
-<body>
-    <nav class="letra-blanca navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
-        <nav>
-            <button class="btn btn-primary"><a href="landing.html"> Inicio </a><i class="fas fa-home"></i></button>
-            <button class="btn btn-primary"><a href="landing.html"> Evaluadores </a></button>
-            <button class="btn btn-primary"><a href="landing.html"> Cursos </a></button>
-            <button class="btn btn-primary"><a href="EvaluacionResumenes.html"> Resumenes de evaluación </a></button>
+    <head>
+        <meta charset="utf-8">
+        <title>Ficha de Evaluación</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="styleFichaEvaluación.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    </head>
+    <body>
+        <nav class="letra-blanca navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
+            <nav>
+                <button class="btn btn-primary"><a href="landing.html"> Inicio </a><i class="fas fa-home"></i></button>
+                <button class="btn btn-primary"><a href="landing.html"> Evaluadores </a></button>
+                <button class="btn btn-primary"><a href="landing.html"> Cursos </a></button>
+                <button class="btn btn-primary"><a href="EvaluacionResumenes.html"> Resumenes de evaluación </a></button>
+            </nav>
+            <button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button>
         </nav>
-        <button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button>
-    </nav>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="container " >
+
+        <div class="container" id="first_div">
             <div class="row border border-primary ">
               <div class="col-sm-4 border-primary border-right"><!-- Columna principal izquierda -->
                 <div class="row border-primary border-bottom">
                     <h3>&nbsp;Información:</h3>
                     <hr>
                     <div class="card-body"> 
-                <div class="card border-primary " >
+                        <div class="card border-primary" >
+                            <div class="container " > <!-- Información -->
+                                <div class="row">
+                                    <div class="col-3"> Curso: </div>
+                                    <div class="col-sm "> CC4401-1 </div>                    
+                                </div>
 
-                    <div class="container " > <!-- Información -->
+                                <div class="row">
+                                    <div class="col-7"> Fecha de inicio: </div>
+                                    <div class="col-sm"> 06-04-2019 </div>
+                                </div>
 
+                                <div class="row">
+                                    <div class="col-7"> Fecha de termino: </div>
+                                    <div class="col-sm"> 09-04-2019 </div>
+                                </div>
 
+                                <div class="row">
+                                    <div class="col-7"> Duracion esperada: </div>
+                                    <div class="col"> 6 minutos </div>
+                                </div>
 
-                        <div class="row">
-                          <div class="col-3 ">
-                              Curso: 
-                          </div>
-                          <div class="col-sm ">CC4401-1</div>                    
+                                <div class="row">
+                                    <div class="col-3">
+                                        <br>
+                                        Grupo:
+                                    </div>
+                                    <div class="col-7">
+                                        <br>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Elegir Grupo</option>
+                                            <option>Grupo 1</option>
+                                            <option>Grupo 2</option>
+                                            <option>Grupo 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-7"> <br> </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-7"> <br> </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-7"> <br> </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm">
+                                        Estado:  Abierta  <span style='font-size:12px;'>&#9989;</span>
+                                    </div>    
+                                </div> 
+                            </div>
                         </div>
-
-
-
-                        <div class="row">
-                            <div class="col-7 ">
-                               Fecha de inicio:
-                            </div>
-                              <div class="col-sm">06-04-2019
-                              </div>
-                        </div> 
-                        <div class="row">
-                            <div class="col-7">
-                               Fecha de termino:
-                            </div>
-                              <div class="col-sm">
-                                09-04-2019
-                              </div>
-                        </div>   
-                        <div class="row">
-                            <div class="col-7 ">
-                               Duracion esperada:
-                            </div>
-                              <div class="col " >6 minutos
-                              </div>
-                        </div>  
-                        <div class="row">
-                            <div class="col-3 ">
-                              <br>
-                               Grupo:
-                            </div>
-                            <div class="col-7 ">
-                                <br>
-                                <select id="inputState" class="form-control">
-                                  <option selected>Elegir Grupo</option>
-                                  <option>Grupo 1</option>
-                                  <option>Grupo 2</option>
-                                  <option>Grupo 3</option>
-                                </select>
-                             </div>
-
-                        </div> 
-                        <div class="row">
-                            <div class="col-7 ">
-                               <br>
-                            </div>
-
-                        </div> 
-                        <div class="row">
-                            <div class="col-7 ">
-                               <br>
-                            </div>
-
-                        </div> 
-                        <div class="row">
-                            <div class="col-7 ">
-                               <br>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-sm ">
-                                Estado:  Abierta  <span style='font-size:12px;'>&#9989;</span>
-                            </div>
-                            
-                          </div> 
-                      </div>
-
-
-
-
-
-                </div>
                     </div>
 
-                  </div>
-                  <div class="row">
+                </div>
+                <div class="row">
                     <div class="col">
                         <h3>Lista Evaluadores:</h3>
                         <hr>
@@ -134,15 +105,8 @@
                             <li>Invitados:</li>
                               <ul class="no-bullet-list"><li>Invitado 1</li></ul>
                         </ul>
-
-
-
                     </div>
-
-
-                  </div>
-                  
-                
+                </div>
               </div>
               
               <div class="col-sm-8 " >
@@ -210,22 +174,13 @@
                             <td class="table-secondary"></td>
                         </tr>
                     </table>
-                    </div>
-
-
-                    <button class="btn btn-success"> Editar Rubrica <i></i> </button>
-
+                </div>
+                <button class="btn btn-success"> Editar Rubrica <i></i> </button>
               </div>
               <!--aca-->
-
-
-            
-            </div>
-          
-
-            </div>
-
+            </div>        
         </div>
+        
         <nav class="navbar navbar-expand-sm bg-primary fixed-bottom"></nav>
     </body>    
 </html>
