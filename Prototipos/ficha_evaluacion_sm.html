@@ -10,10 +10,16 @@
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     </head>
     <body>
+        <style>
+            .navbar > div > button{
+                padding-bottom: 0px; 
+            }    
+        </style>
+
         <nav class="collapse letra-blanca navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
-            <ul class="navbar">
-                <div>
-                    <a class="nav-link" id="navbarDropdown1" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <ul class="navbar py-0">
+                <div class="nav-item">
+                    <a class="nav-link py-0 nav-item" id="navbarDropdown1" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <button class="btn btn-primary"><i class="fas fa-bars"></i></button>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
@@ -23,11 +29,11 @@
                         <li><a href="EvaluacionResumenes.html"> Resumenes de evaluación </a><i class="far fa-list-alt"></i></li>
                     </ul>
                 </div>
-                <div><button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button></div>
+                <div class="nav-item"><button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button></div>
             </ul>
         </nav>
 
-        <div class="container" id="first_div" style="padding-top: 100px;">
+        <div class="container" id="first_div">
             <div class="row border border-primary ">
                   <div class="col-sm-12 border-primary border-right"><!-- Columna principal izquierda -->
                     <div class="row border-primary border-bottom">
