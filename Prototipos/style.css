@@ -6,6 +6,22 @@
   border-radius: 20px;
   border: 2px solid gray;
 }
+.menu-creacion-rapida{
+  margin-top: 3.5%;
+  margin-bottom: 50px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 20px;
+  border: 2px solid green;
+}
+.menu-eliminacion-rapida{
+  margin-top: 3.5%;
+  margin-bottom: 50px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 20px;
+  border: 2px solid red;  
+}
 .borde{
   border-bottom: 2px solid gray;
 }
