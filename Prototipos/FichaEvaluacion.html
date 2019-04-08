@@ -107,7 +107,7 @@
                             <li>Invitados:</li>
                               <ul class="no-bullet-list"><li>Invitado 1</li></ul>
                         </ul>
-                        <button class="btn btn-success"> Modificar evaluadores </button>
+                        <button class="btn btn-success" style="margin-bottom: 5px"> Modificar evaluadores </button>
                     </div>
                 </div>
               </div>
@@ -117,68 +117,92 @@
                 <hr>
                 <div class="col-10 text-center" >
                     <table class=" tabla table table-bordered table-hover" >
-                    <thead>
-                        <tr>
-                            <th scope="col">Ambito</th>
-                            <th scope="col"> 0.0 </th>
-                            <th scope="col"> 0.3 </th>
-                            <th scope="col"> 0.5 </th>
+                        <thead>
+                            <tr>
+                                <th scope="col">Ambito</th>
+                                <th scope="col"> 0.0 </th>
+                                <th scope="col"> 0.3 </th>
+                                <th scope="col"> 0.5 </th>
                                 <th scope="col"> 0.7 </th>
                                 <th scope="col"> 1.0 </th>
                             </tr>
                         </thead>
                     
                         <tr>
-                            <td> Aspecto 1 </td>
-                            <td> Nivel a </td>
-                            <td> Nivel b </td>
-                            <td> Nivel c </td>
-                            <td> Nivel d </td>
-                            <td> Nivel e </td>
+                            <div class="form-check">
+                                <td> Aspecto 1 </td>
+                                <td><input type="radio" class="form-check-input" name="asp1"> Nivel a </td>
+                                <td><input type="radio" class="form-check-input" name="asp1"> Nivel b </td>
+                                <td><input type="radio" class="form-check-input" name="asp1"> Nivel c </td>
+                                <td><input type="radio" class="form-check-input" name="asp1"> Nivel d </td>
+                                <td><input type="radio" class="form-check-input" name="asp1"> Nivel e </td>
+                            </div>
                         </tr>
+
                         <tr>
-                            <td> Aspecto 2 </td>
-                            <td> Nivel a </td>
-                            <td> Nivel b </td>
-                            <td> Nivel c </td>
-                            <td> Nivel d </td>
-                            <td class="table-secondary"></td>
+                            <div class="form-check">
+                                <td> Aspecto 2 </td>
+                                <td><input type="radio" class="form-check-input" name="asp2"> Nivel a </td>
+                                <td><input type="radio" class="form-check-input" name="asp2"> Nivel b </td>
+                                <td><input type="radio" class="form-check-input" name="asp2"> Nivel c </td>
+                                <td><input type="radio" class="form-check-input" name="asp2"> Nivel d </td>
+                                <td class="table-secondary"><input type="radio" class="form-check-input" name="asp2" disabled></td>
+                            </div>
                         </tr>
+
                         <tr>
-                            <td> Aspecto 3 </td>
-                            <td> Nivel a </td>
-                            <td> Nivel b </td>
-                            <td> Nivel c </td>
-                            <td> Nivel d </td>
-                            <td> Nivel e </td>
+                            <div class="form-check">
+                                <td> Aspecto 3 </td>
+                                <td><input type="radio" class="form-check-input" name="asp3"> Nivel a </td>
+                                <td><input type="radio" class="form-check-input" name="asp3"> Nivel b </td>
+                                <td><input type="radio" class="form-check-input" name="asp3"> Nivel c </td>
+                                <td><input type="radio" class="form-check-input" name="asp3"> Nivel d </td>
+                                <td><input type="radio" class="form-check-input" name="asp3"> Nivel e </td>
+                            </div>
                         </tr>
+                        
                         <tr>
-                            <td> Aspecto 4 </td>
-                            <td> Nivel a </td>
-                            <td> Nivel b </td>
-                            <td> Nivel c </td>
-                            <td class="table-secondary"></td>
-                            <td class="table-secondary"></td>
+                            <div class="form-check">
+                                <td> Aspecto 4 </td>
+                                <td><input type="radio" class="form-check-input" name="asp4"> Nivel a </td>
+                                <td><input type="radio" class="form-check-input" name="asp4"> Nivel b </td>
+                                <td><input type="radio" class="form-check-input" name="asp4"> Nivel c </td>
+                                <td class="table-secondary"><input type="radio" class="form-check-input" name="asp4" disabled></td>
+                                <td class="table-secondary"><input type="radio" class="form-check-input" name="asp4" disabled></td>
+                            </div>
                         </tr>
+
                         <tr>
-                            <td> Aspecto 5 </td>
-                            <td> Nivel a </td>
-                            <td> Nivel b </td>
-                            <td> Nivel c </td>
-                            <td> Nivel d </td>
-                            <td> Nivel e </td>
+                            <div class="form-check">
+                                <td> Aspecto 5 </td>
+                                <td><input type="radio" class="form-check-input" name="asp5"> Nivel a </td>
+                                <td><input type="radio" class="form-check-input" name="asp5"> Nivel b </td>
+                                <td><input type="radio" class="form-check-input" name="asp5"> Nivel c </td>
+                                <td><input type="radio" class="form-check-input" name="asp5"> Nivel d </td>
+                                <td><input type="radio" class="form-check-input" name="asp5"> Nivel e </td>
+                            </div>
                         </tr>
+
                         <tr>
-                            <td> Aspecto 6 </td>
-                            <td> Nivel a </td>
-                            <td> Nivel b </td>
-                            <td class="table-secondary"></td>
-                            <td class="table-secondary"></td>
-                            <td class="table-secondary"></td>
+                            <div class="form-check">
+                                <td> Aspecto 6 </td>
+                                <td><input type="radio" class="form-check-input" name="asp6"> Nivel a </td>
+                                <td><input type="radio" class="form-check-input" name="asp6"> Nivel b </td>
+                                <td class="table-secondary"><input type="radio" class="form-check-input" name="asp6" disabled></td>
+                                <td class="table-secondary"><input type="radio" class="form-check-input" name="asp6" disabled></td>
+                                <td class="table-secondary"><input type="radio" class="form-check-input" name="asp6" disabled></td>
+                            </div>
                         </tr>
                     </table>
                 </div>
-                <button class="btn btn-success"> Editar Rubrica <i></i> </button>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <button class="btn btn-success col-2"> Editar Rubrica <i></i> </button>
+                    <div class="col-3"></div>
+                    <button class="btn btn-warning col-4"> Iniciar Evaluación </button>
+                    <div class="col-5"></div>
+                </div>
+                
               </div>
               <!--aca-->
             </div> 
