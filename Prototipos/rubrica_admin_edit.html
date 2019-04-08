@@ -132,44 +132,38 @@
             </div>
         </div>        
         
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-4" style="padding-top:30px;">
-                <button class="btn btn-info">Guardar y Terminar <i class="	far fa-check-circle"></i></button>
-                <button class="btn btn-warning">Guardar Rubrica <i class="far fa-save"></i></button>
-                <button class="btn btn-danger">Terminar sin guardar <i class="far fa-times-circle"></i></button>
-            </div>
-            <div class="col-4">
+        <br>
+        <div class="col-4">
                 <table class="table table-bordered table-hove text-center">
-                <thead>
-                    <tr> 
-                    <th> Tiempo mínimo </th>
-                    <th> Tiempo máximo </th>
-                </tr>
-            </thead>
-                <tr>
-                    <td>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-3"></div>
-                            <div class="col-3">
-                                <span>MM</span>
-                            </div>
-                            <div class="col-2">
-                                <span>SS</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-3"></div>
-                            <div class=col-6> 
-                            <select class="form-control-sm" name="tiempo-min-minutos" id="tiempo-min-minutos"></select>
-                            </select>: <select class="form-control-sm" name="tiempo-min-segundos" id="tiempo-min-segundos"></select></td>
-                            </div>
-                        </div>
-                    </div>
-                    <td>
+                    <thead>
+                        <tr> 
+                            <th> Tiempo mínimo </th>
+                            <th> Tiempo máximo </th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>
                         <div class="container-fluid">
                             <div class="row">
+                                <div class="col-3"></div>
+                                <div class="col-3">
+                                    <span>MM</span>
+                                </div>
+                                <div class="col-2">
+                                    <span>SS</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <div class=col-6> 
+                                    <select class="form-control-sm" name="tiempo-min-minutos" id="tiempo-min-minutos"></select>
+                                    </select>: <select class="form-control-sm" name="tiempo-min-segundos" id="tiempo-min-segundos"></select></td>
+                                </div>
+                            </div>
+                        </div>
+                        <td>
+                            <div class="container-fluid">
+                                <div class="row">
                                     <div class="col-3"></div>
                                     <div class="col-3">
                                         <span>MM</span>
@@ -177,21 +171,35 @@
                                     <div class="col-2">
                                         <span>SS</span>
                                     </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3"></div>
+                                    <select class="form-control-sm"  name="tiempo-max-minutos" id="tiempo-max-minutos"></select>
+                                    :<select class="form-control-sm" name="tiempo-max-segundos" id="tiempo-max-segundos"></select>
+                                </div>
                             </div>
-                            <div class="row">
-                                <div class="col-3"></div>
-                                <select class="form-control-sm"  name="tiempo-max-minutos" id="tiempo-max-minutos"></select>
-                                :<select class="form-control-sm" name="tiempo-max-segundos" id="tiempo-max-segundos"></select>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4" style="padding-top:30px;">
+                    <button class="btn btn-info">Guardar y Terminar <i class="	far fa-check-circle"></i></button>
+                    <button class="btn btn-warning">Guardar Rubrica <i class="far fa-save"></i></button>
+                </div>
+
+                <div class="col-4" style="padding-top:30px;">
+                    <button class="btn btn-danger">Terminar sin guardar <i class="far fa-times-circle"></i></button>
+                </div>
             </div>
+
+            
         </div>
         
-        <div style="padding-top:10px;">
-            <button class="btn btn-primary">Pagina Anterior <i class="far fa-arrow-alt-circle-left"></i></button>
+        <div style="padding-top:10px; margin-left:10px;" id="last_div">
+            <button class="btn btn-primary">Página Anterior <i class="far fa-arrow-alt-circle-left"></i></button>
         </div>
 
         <nav class="navbar navbar-expand-sm bg-primary fixed-bottom"></nav>

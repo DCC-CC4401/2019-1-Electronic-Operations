@@ -68,11 +68,11 @@
   border-bottom: 2px solid gray;
   margin-bottom: 20px;
 }
-/*Padding del primer div para que no quede bajo navbar superior*/
+/*Margen del primer div para que no quede bajo navbar superior*/
 #first_div{
-  padding-top: 70px; 
+  margin-top: 70px; 
 }
-/*Padding del ultimo div para que no quede bajo navbar inferior*/
+/*Margen del ultimo div para que no quede bajo navbar inferior*/
 #last_div{
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
