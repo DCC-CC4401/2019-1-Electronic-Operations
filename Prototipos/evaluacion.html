@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<!-- 6.- Ficha de resumen de evaluación (vista por estudiante) -->
 <html>
     <head>
         <meta charset = "utf-8"/>
-        <title> Ficha de evaluación </title>
+        <title> Resumen de evaluación </title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="styleEvaluacion.css"/>
@@ -11,14 +12,14 @@
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     </head>
     <body>
-        <!--Barra de Navegacion con links a ninguna parte-->
+        <!--Barra de Navegacion con links incompletos-->
         <nav class="letra-blanca navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
             <nav>
-                <button class="btn btn-primary"> Inicio <i class="fas fa-home"></i></button>
-                <button class="btn btn-primary"> Evaluadores <i class="far fa-address-book"></i> </button>
-                <button class="btn btn-primary"> Cursos  <i class="fas fa-graduation-cap"></i></button>
-                <button class="btn btn-primary">Fichas de evaluación <i class="far fa-clipboard"></i> </button>
-                <button class="btn btn-primary"> Resumenes de evaluación <i class="far fa-list-alt"></i></button>
+                <button class="btn btn-primary"><a href="landing.html"> Inicio </a><i class="fas fa-home"></i></button>
+                <button class="btn btn-primary"><a> Evaluadores </a><i class="far fa-address-book"></i> </button>
+                <button class="btn btn-primary"><a> Cursos </a><i class="fas fa-graduation-cap"></i></button>
+                <button class="btn btn-primary"><a> Fichas de evaluación </a><i class="far fa-clipboard"></i> </button>
+                <button class="btn btn-primary"><a href="rubrica_evaluador.html"> Rúbricas de evaluación </a><i class="far fa-list-alt"></i></button>
             </nav>
             <button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button>
         </nav>
@@ -37,9 +38,9 @@
                     <div class="col-6"> <h4>Tiempo de duración: [MM:SS] </h4></div>
                     <div class="col-5">
                             <ul class="list-group ">
-                                    <li class="list-group-item"> Evaluador 1 (1) </li>
-                                    <li class="list-group-item"> Evaluador 2 (2) </li>
-                                    <li class="list-group-item"> Evaluador 3 (3) </li>
+                                    <li class="list-group-item"> Evaluador 1 </li>
+                                    <li class="list-group-item"> Evaluador 2 </li>
+                                    <li class="list-group-item"> Evaluador 3 </li>
                             </ul>
                     </div>
                 </div>
@@ -83,9 +84,9 @@
                     <table class="table table-bordered">
                         <tr>
                             <th scope="col"> Aspecto a evaluar</th>
-                            <th scope="col"> (1) </th>
-                            <th scope="col"> (2) </th>
-                            <th scope="col"> (3) </th>
+                            <th scope="col">  </th>
+                            <th scope="col">  </th>
+                            <th scope="col">  </th>
                             <th scope="col"> Promedio </th>
                             <th scope="col"> Promedio del curso </th>
                         </tr>
@@ -140,7 +141,7 @@
                     </table>
                 </div>
             </div>
-            <button class="btn btn-primary">Descargar rubrica <i class="fas fa-arrow-circle-down"></i></button>
+            <button class="btn btn-primary">Descargar resumen <i class="fas fa-arrow-circle-down"></i></button>
         </div>
         <div id="last_div" style="margin-left:1%;"></div>
         <nav class="navbar navbar-expand-sm bg-primary fixed-bottom"></nav>

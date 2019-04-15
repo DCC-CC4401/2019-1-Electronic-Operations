@@ -1,94 +1,105 @@
 <!DOCTYPE html>
+<!-- 1.- Landing page para el administrador -->
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Landing Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
-    <span class="letra-blanca">Nombre del Profesor</span>
-    <button class="btn btn-primary" id="boton-barra"><i class="fas fa-sign-out-alt"></i>  Log Out </button>
-    </nav>
-    <div class="menu-principal bg-light">
-        
-        <div class="container-fluid evaluadores borde">
-            <h2>Gestionar Evaluadores</h2>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-7">
-                    <img id="imagen-postulaciones" src="Imagenes/agregar-evaluador.png" style="border-radius: 50%;" alt="">
-                </div>
-                <div class="col-3 btn-group-vertical botones">
-                    <button class="btn btn-success agregar">Crear <i class='fas fa-plus-circle'></i></button>
-                    <button class="btn btn-warning modificar">Modificar <i class="fas fa-sync-alt"></i></button>
-                    <button class="btn btn-danger eliminar">Eliminar <i class="fas fa-trash-alt"></i></button>
-                </div>
-            </div>
-        </div>
+    <head>
+        <meta charset="utf-8">
+        <title>Landing Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
+            <span class="letra-blanca">Nombre del Profesor</span>
+            <button class="btn btn-primary" id="boton-barra"><i class="fas fa-sign-out-alt"></i>  Log Out </button>
+        </nav>
 
-        <div class="container-fluid  borde">
-            <h2>Gestionar nombres de Cursos</h2>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-7">
-                    <img id="imagen-cursos" src="Imagenes/nombres_cursos.png" style="border-radius: 50%;" alt="">
+        <div class="menu-principal bg-light" id="first_div">        
+            <div class="container-fluid evaluadores borde">
+                <h2>Gestionar Evaluadores</h2>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-7">
+                        <img id="imagen-postulaciones" src="Imagenes/agregar-evaluador.png" style="border-radius: 50%;" alt="">
+                    </div>
+                    
+                    <div class="col-3 btn-group-vertical botones">
+                        <button id="crear-evaluador" class="btn btn-success agregar">Crear <i class='fas fa-plus-circle'></i></button>
+                        <button class="btn btn-warning modificar">Modificar <i class="fas fa-sync-alt"></i></button>
+                        <button id="eliminar-evaluador" class="btn btn-danger eliminar">Eliminar <i class="fas fa-trash-alt"></i></button>
+                    </div>
                 </div>
-                <div class="col-3 btn-group-vertical botones">
-                    <button class="btn btn-success agregar">Crear <i class='fas fa-plus-circle'></i></button>
-                    <button class="btn btn-warning modificar">Modificar <i class="fas fa-sync-alt"></i></button>
-                    <button class="btn btn-danger eliminar">Eliminar <i class="fas fa-trash-alt"></i></button>
+            </div>
+
+            <div class="container-fluid borde">
+                <h2>Gestionar nombres de Cursos</h2>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-7">
+                        <img id="imagen-cursos" src="Imagenes/nombres_cursos.png" style="border-radius: 50%;" alt="">
+                    </div>
+                    <div class="col-3 btn-group-vertical botones">
+                        <button id="crear-nombre-curso" class="btn btn-success agregar">Crear <i class='fas fa-plus-circle'></i></button>
+                        <button class="btn btn-warning modificar">Modificar <i class="fas fa-sync-alt"></i></button>
+                        <button id="eliminar-nombre-curso"class="btn btn-danger eliminar">Eliminar <i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  borde">
+                <h2>Gestionar Cursos</h2>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-7">
+                        <img id="imagen-gestion" src="Imagenes/cursos.png" style="border-radius: 50%;" alt="">
+                    </div>
+                    <div class="col-3 btn-group-vertical botones">
+                        <button class="btn btn-info agregar"> Creacion Rapida <i class="fas fa-plus"></i></button>
+                        <button class="btn btn-success agregar">Crear <i class='fas fa-plus-circle'></i></button>
+                        <button class="btn btn-warning modificar">Modificar <i class="fas fa-sync-alt"></i></button>
+                        <button id="eliminar-curso" class="btn btn-danger eliminar">Eliminar <i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid  borde">
+                <h2>Gestionar Evaluaciones</h2>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-7">
+                        <img id="imagen-notas"src="Imagenes/evaluaciones.png" style="border-radius: 30%;"alt="">
+                    </div>
+                    <div class="col-3 btn-group-vertical botones">
+                        <button class="btn btn-info agregar"> Creacion Rapida <i class="fas fa-plus"></i></button>
+                        <button class="btn btn-success agregar">Crear <i class='fas fa-plus-circle'></i></button>
+                        <button class="btn btn-warning modificar">Modificar <i class="fas fa-sync-alt"></i></button>
+                        <button id="eliminar-evaluacion" class="btn btn-danger eliminar">Eliminar <i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <h2>Gestionar Rubricas</h2>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-7">
+                        <img id="imagen-tareas" src="Imagenes/rubricas.png" style="border-radius: 50%;" alt="">
+                    </div>
+                    <div class="col-3 btn-group-vertical botones">
+                        <button class="btn btn-info agregar"> Creacion Rapida <i class="fas fa-plus"></i></button>
+                        <button class="btn btn-success agregar">Crear <i class='fas fa-plus-circle'></i></button>
+                        <button class="btn btn-warning modificar">Modificar <i class="fas fa-sync-alt"></i></button>
+                        <button id="eliminar-rubrica" class="btn btn-danger eliminar">Eliminar <i class="fas fa-trash-alt"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid  borde">
-            <h2>Gestionar Cursos</h2>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-7">
-                    <img id="imagen-gestion" src="Imagenes/cursos.png" style="border-radius: 50%;" alt="">
-                </div>
-                <div class="col-3 btn-group-vertical botones">
-                    <button class="btn btn-success agregar">Crear <i class='fas fa-plus-circle'></i></button>
-                    <button class="btn btn-warning modificar">Modificar <i class="fas fa-sync-alt"></i></button>
-                    <button class="btn btn-danger eliminar">Eliminar <i class="fas fa-trash-alt"></i></button>
-                </div>
-            </div>
+        <div id="interacciones-rapidas">
+
         </div>
-        <div class="container-fluid  borde">
-            <h2>Gestionar Evaluaciones</h2>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-7">
-                    <img id="imagen-notas"src="Imagenes/evaluaciones.png" style="border-radius: 30%;"alt="">
-                </div>
-                <div class="col-3 btn-group-vertical botones">
-                    <button class="btn btn-success agregar">Crear <i class='fas fa-plus-circle'></i></button>
-                    <button class="btn btn-warning modificar">Modificar <i class="fas fa-sync-alt"></i></button>
-                    <button class="btn btn-danger eliminar">Eliminar <i class="fas fa-trash-alt"></i></button>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <h2>Gestionar Rubricas</h2>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-7">
-                    <img id="imagen-tareas" src="Imagenes/rubricas.png" style="border-radius: 50%;" alt="">
-                </div>
-                <div class="col-3 btn-group-vertical botones">
-                    <button class="btn btn-success agregar">Crear <i class='fas fa-plus-circle'></i></button>
-                    <button class="btn btn-warning modificar">Modificar <i class="fas fa-sync-alt"></i></button>
-                    <button class="btn btn-danger eliminar">Eliminar <i class="fas fa-trash-alt"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<nav class="navbar navbar-expand-sm bg-primary fixed-bottom"></nav>
-</body>
+        <script src="formularios-rapidos.js">
+        </script>
+        <nav class="navbar navbar-expand-sm bg-primary fixed-bottom"></nav>
+    </body>
 </html>

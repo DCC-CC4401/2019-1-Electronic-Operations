@@ -6,13 +6,32 @@
   border-radius: 20px;
   border: 2px solid gray;
 }
+.menu-creacion-rapida{
+  margin-top: 3.5%;
+  margin-bottom: 50px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 20px;
+  border: 2px solid green;
+}
+.menu-eliminacion-rapida{
+  margin-top: 3.5%;
+  margin-bottom: 50px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 20px;
+  border: 2px solid red;  
+}
 .borde{
   border-bottom: 2px solid gray;
 }
 .letra-blanca{
   color: white;
 }
-.letra-blanca button > a{
+.letra-blanca button > a, i{
+  color: white;
+}
+.letra-blanca li > a{
   color: white;
 }
 .botones{
@@ -38,22 +57,22 @@
 #imagen-tareas{
   height: 90px;
 }
-.cargos{
-  width: 19px;
-  height: 19px;
-}
-.ayudante{
-  background: url("Imagenes/iconos_ucursos.png") 0 -133px;   
-}
-.auxiliar{
-  background: url("Imagenes/iconos_ucursos.png") 0 -760px;
-}
-.coordinador{
-  background: url("Imagenes/iconos_ucursos.png") 0 -817px;
-}
-.invitado{
-  background: url("Imagenes/iconos_ucursos.png") 0 -950px;
+.modificar-nivel{
+  border: none;
 }
 .rubrica{
   margin-top: 4%;
+}
+/*borde con margen*/
+.borde-m{
+  border-bottom: 2px solid gray;
+  margin-bottom: 20px;
+}
+/*Margen del primer div para que no quede bajo navbar superior*/
+#first_div{
+  margin-top: 70px; 
+}
+/*Margen del ultimo div para que no quede bajo navbar inferior*/
+#last_div{
+  margin-bottom: 20px;
 }

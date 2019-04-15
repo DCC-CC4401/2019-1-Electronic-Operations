@@ -1,123 +1,96 @@
 <!DOCTYPE html>
+<!-- 4.- Ficha de evaluación (para el administrador) -->
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Evaluacion Resumenes Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="styleFichaEvaluación.css">
-    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-</head>
-<body>
-    <nav class="letra-blanca navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
-        <nav>
-            <button class="btn btn-primary"><a href="landing.html"> Inicio </a><i class="fas fa-home"></i></button>
-            <button class="btn btn-primary"><a href="landing.html"> Evaluadores </a></button>
-            <button class="btn btn-primary"><a href="landing.html"> Cursos </a></button>
-            <button class="btn btn-primary"><a href="EvaluacionResumenes.html"> Resumenes de evaluación </a></button>
+    <head>
+        <meta charset="utf-8">
+        <title>Ficha de Evaluación</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="styleFichaEvaluación.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    </head>
+    <body>
+        <nav class="letra-blanca navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
+            <nav>
+                <button class="btn btn-primary"><a href="landing.html"> Inicio </a><i class="fas fa-home"></i></button>
+                <button class="btn btn-primary"><a href="landing.html"> Evaluadores </a></button>
+                <button class="btn btn-primary"><a href="landing.html"> Cursos </a></button>
+                <button class="btn btn-primary"><a href="EvaluacionResumenes.html"> Resumenes de evaluación </a></button>
+            </nav>
+            <button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button>
         </nav>
-        <button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button>
-    </nav>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="container " >
+
+        <div class="container" id="first_div">
             <div class="row border border-primary ">
               <div class="col-sm-4 border-primary border-right"><!-- Columna principal izquierda -->
                 <div class="row border-primary border-bottom">
                     <h3>&nbsp;Información:</h3>
                     <hr>
                     <div class="card-body"> 
-                <div class="card border-primary " >
+                        <div class="card border-primary" >
+                            <div class="container " > <!-- Información -->
+                                <div class="row">
+                                    <div class="col-3"> Curso: </div>
+                                    <div class="col-sm "> CC4401-1 </div>                    
+                                </div>
 
-                    <div class="container " > <!-- Información -->
+                                <div class="row">
+                                    <div class="col-7"> Fecha de inicio: </div>
+                                    <div class="col-sm"> 06-04-2019 </div>
+                                </div>
 
+                                <div class="row">
+                                    <div class="col-7"> Fecha de termino: </div>
+                                    <div class="col-sm"> 09-04-2019 </div>
+                                </div>
 
+                                <div class="row">
+                                    <div class="col-7"> Duracion esperada: </div>
+                                    <div class="col"> 6 minutos </div>
+                                </div>
+                                <br/>
+                                <button class="btn btn-success"> Actualizar plazo </button>
 
-                        <div class="row">
-                          <div class="col-3 ">
-                              Curso: 
-                          </div>
-                          <div class="col-sm ">CC4401-1</div>                    
+                                <div class="row">
+                                    <div class="col-3">
+                                        <br>
+                                        Grupo:
+                                    </div>
+                                    <div class="col-7">
+                                        <br>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Elegir Grupo</option>
+                                            <option>Grupo 1</option>
+                                            <option>Grupo 2</option>
+                                            <option>Grupo 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-7"> <br> </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-7"> <br> </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-7"> <br> </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm">
+                                        Estado:  Abierta  <span style='font-size:12px;'>&#9989;</span>
+                                    </div>    
+                                </div> 
+                            </div>
                         </div>
-
-
-
-                        <div class="row">
-                            <div class="col-7 ">
-                               Fecha de inicio:
-                            </div>
-                              <div class="col-sm">06-04-2019
-                              </div>
-                        </div> 
-                        <div class="row">
-                            <div class="col-7">
-                               Fecha de termino:
-                            </div>
-                              <div class="col-sm">
-                                09-04-2019
-                              </div>
-                        </div>   
-                        <div class="row">
-                            <div class="col-7 ">
-                               Duracion esperada:
-                            </div>
-                              <div class="col " >6 minutos
-                              </div>
-                        </div>  
-                        <div class="row">
-                            <div class="col-3 ">
-                              <br>
-                               Grupo:
-                            </div>
-                            <div class="col-7 ">
-                                <br>
-                                <select id="inputState" class="form-control">
-                                  <option selected>Elegir Grupo</option>
-                                  <option>Grupo 1</option>
-                                  <option>Grupo 2</option>
-                                  <option>Grupo 3</option>
-                                </select>
-                             </div>
-
-                        </div> 
-                        <div class="row">
-                            <div class="col-7 ">
-                               <br>
-                            </div>
-
-                        </div> 
-                        <div class="row">
-                            <div class="col-7 ">
-                               <br>
-                            </div>
-
-                        </div> 
-                        <div class="row">
-                            <div class="col-7 ">
-                               <br>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-sm ">
-                                Estado:  Abierta  <span style='font-size:12px;'>&#9989;</span>
-                            </div>
-                            
-                          </div> 
-                      </div>
-
-
-
-
-
-                </div>
                     </div>
 
-                  </div>
-                  <div class="row">
+                </div>
+                <div class="row">
                     <div class="col">
                         <h3>Lista Evaluadores:</h3>
                         <hr>
@@ -134,15 +107,9 @@
                             <li>Invitados:</li>
                               <ul class="no-bullet-list"><li>Invitado 1</li></ul>
                         </ul>
-
-
-
+                        <button class="btn btn-success" style="margin-bottom: 5px"> Modificar evaluadores </button>
                     </div>
-
-
-                  </div>
-                  
-                
+                </div>
               </div>
               
               <div class="col-sm-8 " >
@@ -150,82 +117,150 @@
                 <hr>
                 <div class="col-10 text-center" >
                     <table class=" tabla table table-bordered table-hover" >
-                    <thead>
-                        <tr>
-                            <th scope="col">Ambito</th>
-                            <th scope="col"> 0.0 </th>
-                            <th scope="col"> 0.3 </th>
-                            <th scope="col"> 0.5 </th>
+                        <thead>
+                            <tr>
+                                <th scope="col">Ambito</th>
+                                <th scope="col"> 0.0 </th>
+                                <th scope="col"> 0.3 </th>
+                                <th scope="col"> 0.5 </th>
                                 <th scope="col"> 0.7 </th>
                                 <th scope="col"> 1.0 </th>
                             </tr>
                         </thead>
                     
                         <tr>
-                            <td> Aspecto 1 </td>
-                            <td> Nivel a </td>
-                            <td> Nivel b </td>
-                            <td> Nivel c </td>
-                            <td> Nivel d </td>
-                            <td> Nivel e </td>
+                            <div class="form-check">
+                                <td> Aspecto 1 </td>
+                                <td><input type="radio" class="form-check-input" name="asp1"> Nivel a </td>
+                                <td><input type="radio" class="form-check-input" name="asp1"> Nivel b </td>
+                                <td><input type="radio" class="form-check-input" name="asp1"> Nivel c </td>
+                                <td><input type="radio" class="form-check-input" name="asp1"> Nivel d </td>
+                                <td><input type="radio" class="form-check-input" name="asp1"> Nivel e </td>
+                            </div>
                         </tr>
+
                         <tr>
-                            <td> Aspecto 2 </td>
-                            <td> Nivel a </td>
-                            <td> Nivel b </td>
-                            <td> Nivel c </td>
-                            <td> Nivel d </td>
-                            <td class="table-secondary"></td>
+                            <div class="form-check">
+                                <td> Aspecto 2 </td>
+                                <td><input type="radio" class="form-check-input" name="asp2"> Nivel a </td>
+                                <td><input type="radio" class="form-check-input" name="asp2"> Nivel b </td>
+                                <td><input type="radio" class="form-check-input" name="asp2"> Nivel c </td>
+                                <td><input type="radio" class="form-check-input" name="asp2"> Nivel d </td>
+                                <td class="table-secondary"><input type="radio" class="form-check-input" name="asp2" disabled></td>
+                            </div>
                         </tr>
+
                         <tr>
-                            <td> Aspecto 3 </td>
-                            <td> Nivel a </td>
-                            <td> Nivel b </td>
-                            <td> Nivel c </td>
-                            <td> Nivel d </td>
-                            <td> Nivel e </td>
+                            <div class="form-check">
+                                <td> Aspecto 3 </td>
+                                <td><input type="radio" class="form-check-input" name="asp3"> Nivel a </td>
+                                <td><input type="radio" class="form-check-input" name="asp3"> Nivel b </td>
+                                <td><input type="radio" class="form-check-input" name="asp3"> Nivel c </td>
+                                <td><input type="radio" class="form-check-input" name="asp3"> Nivel d </td>
+                                <td><input type="radio" class="form-check-input" name="asp3"> Nivel e </td>
+                            </div>
                         </tr>
+                        
                         <tr>
-                            <td> Aspecto 4 </td>
-                            <td> Nivel a </td>
-                            <td> Nivel b </td>
-                            <td> Nivel c </td>
-                            <td class="table-secondary"></td>
-                            <td class="table-secondary"></td>
+                            <div class="form-check">
+                                <td> Aspecto 4 </td>
+                                <td><input type="radio" class="form-check-input" name="asp4"> Nivel a </td>
+                                <td><input type="radio" class="form-check-input" name="asp4"> Nivel b </td>
+                                <td><input type="radio" class="form-check-input" name="asp4"> Nivel c </td>
+                                <td class="table-secondary"><input type="radio" class="form-check-input" name="asp4" disabled></td>
+                                <td class="table-secondary"><input type="radio" class="form-check-input" name="asp4" disabled></td>
+                            </div>
                         </tr>
+
                         <tr>
-                            <td> Aspecto 5 </td>
-                            <td> Nivel a </td>
-                            <td> Nivel b </td>
-                            <td> Nivel c </td>
-                            <td> Nivel d </td>
-                            <td> Nivel e </td>
+                            <div class="form-check">
+                                <td> Aspecto 5 </td>
+                                <td><input type="radio" class="form-check-input" name="asp5"> Nivel a </td>
+                                <td><input type="radio" class="form-check-input" name="asp5"> Nivel b </td>
+                                <td><input type="radio" class="form-check-input" name="asp5"> Nivel c </td>
+                                <td><input type="radio" class="form-check-input" name="asp5"> Nivel d </td>
+                                <td><input type="radio" class="form-check-input" name="asp5"> Nivel e </td>
+                            </div>
                         </tr>
+
                         <tr>
-                            <td> Aspecto 6 </td>
-                            <td> Nivel a </td>
-                            <td> Nivel b </td>
-                            <td class="table-secondary"></td>
-                            <td class="table-secondary"></td>
-                            <td class="table-secondary"></td>
+                            <div class="form-check">
+                                <td> Aspecto 6 </td>
+                                <td><input type="radio" class="form-check-input" name="asp6"> Nivel a </td>
+                                <td><input type="radio" class="form-check-input" name="asp6"> Nivel b </td>
+                                <td class="table-secondary"><input type="radio" class="form-check-input" name="asp6" disabled></td>
+                                <td class="table-secondary"><input type="radio" class="form-check-input" name="asp6" disabled></td>
+                                <td class="table-secondary"><input type="radio" class="form-check-input" name="asp6" disabled></td>
+                            </div>
                         </tr>
                     </table>
+                </div>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <button class="btn btn-success col-2"> Editar Rubrica <i></i> </button>
+                    <div class="col-3"></div>
+                    <button class="btn btn-warning col-4"> Iniciar Evaluación </button>
+                    <div class="col-5"></div>
+                </div>
+                <div class="row">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">                   
+                         <h3> Estudiantes: </h3>
+                        
+                        <div class="card-body"> 
+                            <div class="card " >
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                                Joaquin Cruz
+                                                <br>Claudio Mallea
+                                                <br>Clemente Paredes
+                                                <br>Néstor Valenzuela
+                                        </div>
+                                        <div class="col-sm-1">
+                                                <span style='font-size:12px;'>&#10060;</span>
+                                                <br><span style='font-size:12px;'>&#9989;</span>
+                                                <br><span style='font-size:12px;'>&#10060;</span>
+                                                <br><span style='font-size:12px;'>&#9989;</span>
+                                        </div>
+                                        <div class="col-sm-1"></div>
+                                        <div class="col-sm-1">
+                                            <input type="checkbox" class="form-check-input" name="presenta">
+                                            <br><input type="checkbox" class="form-check-input" name="presenta">
+                                            <br><input type="checkbox" class="form-check-input" name="presenta">
+                                            <br><input type="checkbox" class="form-check-input" name="presenta">
+                                        </div>
+                                    </div>
+                                </div>
+                        
+
+                            </div>
+                        </div></div>
+
+                    <div class="col-6">                        Tiempo de evaluación: <input type="text"></input>
+                        <br>
+                        <br>
+                        Descuento Estimado: -0.0</div>
+                    
+                    <div class="col-1">
+
+
                     </div>
-
-
-                    <button class="btn btn-success"> Editar Rubrica <i></i> </button>
-
+                </div>
+                
+                
               </div>
-              <!--aca-->
-
-
-            
-            </div>
-          
-
-            </div>
-
+            </div> 
+            <div style="padding-top:10px" id="last_div">
+                <button class="btn btn-primary">Pagina Anterior <i class="far fa-arrow-alt-circle-left"></i></button>
+            </div>      
         </div>
+        
         <nav class="navbar navbar-expand-sm bg-primary fixed-bottom"></nav>
     </body>    
 </html>

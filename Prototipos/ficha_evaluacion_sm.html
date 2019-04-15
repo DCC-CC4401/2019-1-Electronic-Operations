@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Ficha de Evaluación </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="styleFichaEvaluación.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    </head>
+    <body>
+        <style>
+            .navbar > div > button{
+                padding-bottom: 0px; 
+            }    
+        </style>
+
+        <nav class="collapse letra-blanca navbar navbar-expand-lg navbar-light bg-primary justify-content-between fixed-top">
+            <ul class="nav navbar-bar">
+                <div class="nav-item">
+                    <a class="nav-link py-0 nav-item" id="navbarDropdown1" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-primary"><i class="fas fa-bars"></i></button>
+                    </a>
+                    <ul class="dropdown-menu letra-blanca" aria-labelledby="navbarDropdown1" style="background-color: #007bff">
+                        <li><a href="landing.html"> Inicio </a><i class="fas fa-home"></i></li>
+                        <li><a href="landing.html"> Evaluadores </a><i class="fas fa-adress-book"></i></li>
+                        <li><a href="landing.html"> Cursos </a><i class="fas fa-graduation-cap"></i></li>
+                        <li><a href="EvaluacionResumenes.html"> Resumenes de evaluación </a><i class="far fa-list-alt"></i></li>
+                    </ul>
+                </div>
+                <div class="nav-item"><button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Log Out</button></div>
+            </ul>
+        </nav>
+
+        <div class="container" id="first_div">
+            <div class="row border border-primary ">
+                  <div class="col-sm-12 border-primary border-right"><!-- Columna principal izquierda -->
+                    <div class="row border-primary border-bottom">
+                        <h3>&nbsp;Información:</h3>
+                        <hr>
+                    </div>
+                    <div class="row border-primary border-bottom"></div>
+                        <div class="card-body"> 
+                            <div class="card border-primary" >
+                                <div class="container " > 
+                                    <div class="row">
+                                        <div class="col-sm-3"> Curso: </div>
+                                        <div class="col-sm "> CC4401-1 </div>                    
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-sm-7"> Fecha de inicio: </div>
+                                        <div class="col-sm"> 06-04-2019 </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-sm-7"> Fecha de termino: </div>
+                                        <div class="col-sm"> 09-04-2019 </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-sm-7"> Duracion esperada: </div>
+                                        <div class="col-sm"> 6 minutos </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <br>
+                                            Grupo:
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <br>
+                                            <select id="inputState" class="form-control">
+                                                <option selected>Elegir Grupo</option>
+                                                <option>Grupo 1</option>
+                                                <option>Grupo 2</option>
+                                                <option>Grupo 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-sm-7"> <br> </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-sm-7"> <br> </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-sm-7"> <br> </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            Estado:  Abierta  <span style='font-size:12px;'>&#9989;</span>
+                                        </div>    
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="HeadingOne">
+                                    <h5 class="panel-title">
+                                        <a class="btn btn-primary btn-sm"data-toggle="collapse" data-parent="#Accordion" href="#CollapseOne" aria-expanded="true" aria-controls="CollapseOne">
+                                        Cumple Aspecto 1? <i class="fas fa-angle-down"></i>
+                                        </a>
+                                    </h5>
+                                </div>
+            
+                                <div id="CollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="HeadingOne">
+                                    <form>
+                                        <input type="radio" name="aspect" value="op1" checked> (0,0)Nivel a<br>
+                                        <input type="radio" name="aspect" value="op2"> (0,3)Nivel b<br>
+                                        <input type="radio" name="aspect" value="op2"> (0,5)Nivel c<br>
+                                        <input type="radio" name="aspect" value="op2"> (0,7)Nivel d<br>
+                                        <input type="radio" name="aspect" value="op3"> (1,0)Nivel e
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="HeadingTwo">
+                                    <h5 class="panel-title">
+                                        <a class="btn btn-primary btn-sm"data-toggle="collapse" data-parent="#Accordion" href="#CollapseTwo" aria-expanded="true" aria-controls="CollapseTwo">
+                                        Cumple Aspecto 2? <i class="fas fa-angle-down"></i>
+                                        </a>
+                                    </h5>
+                                </div>
+            
+                                <div id="CollapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="HeadingTwo">
+                                    <form>
+                                        <input type="radio" name="aspect" value="op1" checked> (0,0)Nivel a<br>
+                                        <input type="radio" name="aspect" value="op2"> (0,3)Nivel b<br>
+                                        <input type="radio" name="aspect" value="op2"> (0,5)Nivel c<br>
+                                        <input type="radio" name="aspect" value="op3"> (0,7)Nivel d
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="HeadingThree">
+                                    <h5 class="panel-title">
+                                        <a class="btn btn-primary btn-sm"data-toggle="collapse" data-parent="#Accordion" href="#CollapseThree" aria-expanded="true" aria-controls="CollapseThree">
+                                        Cumple Aspecto 3? <i class="fas fa-angle-down"></i>
+                                        </a>
+                                    </h5>
+                                </div>
+            
+                                <div id="CollapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="HeadingThree">
+                                    <form>
+                                        <input type="radio" name="aspect" value="op1" checked> (0,0)Nivel a<br>
+                                        <input type="radio" name="aspect" value="op2"> (0,3)Nivel b<br>
+                                        <input type="radio" name="aspect" value="op2"> (0,5)Nivel c<br>
+                                        <input type="radio" name="aspect" value="op2"> (0,7)Nivel d<br>
+                                        <input type="radio" name="aspect" value="op3"> (1,0)Nivel e
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="HeadingFour">
+                                    <h5 class="panel-title">
+                                        <a class="btn btn-primary btn-sm"data-toggle="collapse" data-parent="#Accordion" href="#CollapseFour" aria-expanded="true" aria-controls="CollapseFour">
+                                        Cumple Aspecto 4? <i class="fas fa-angle-down"></i>
+                                        </a>
+                                    </h5>
+                                </div>
+            
+                                <div id="CollapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="HeadingFour">
+                                    <form>
+                                        <input type="radio" name="aspect" value="op1" checked> (0,0)Nivel a<br>
+                                        <input type="radio" name="aspect" value="op2"> (0,3)Nivel b<br>
+                                        <input type="radio" name="aspect" value="op3"> (0,5)Nivel c
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="HeadingFive">
+                                    <h5 class="panel-title">
+                                        <a class="btn btn-primary btn-sm" data-toggle="collapse" data-parent="#Accordion" href="#CollapseFive" aria-expanded="true" aria-controls="CollapseFive">
+                                        Cumple Aspecto 5?  <i class="fas fa-angle-down"></i>
+                                        </a>
+                                    </h5>
+                                </div>
+            
+                                <div id="CollapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="HeadingFive">
+                                    <form>
+                                        <input type="radio" name="aspect" value="op1" checked> (0,0)Nivel a<br>
+                                        <input type="radio" name="aspect" value="op2"> (0,3)Nivel b<br>
+                                        <input type="radio" name="aspect" value="op2"> (0,5)Nivel c<br>
+                                        <input type="radio" name="aspect" value="op2"> (0,7)Nivel d<br>
+                                        <input type="radio" name="aspect" value="op3"> (1,0)Nivel e
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="HeadingSix">
+                                    <h5 class="panel-title">
+                                        <a class="btn btn-primary btn-sm"data-toggle="collapse" data-parent="#Accordion" href="#CollapseSix" aria-expanded="true" aria-controls="CollapseSix">
+                                        Cumple Aspecto 6? <i class="fas fa-angle-down"></i>
+                                        </a>
+                                    </h5>
+                                </div>
+            
+                                <div id="CollapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="HeadingSix">
+                                    <form>
+                                        <input type="radio" name="aspect" value="op1" checked> (0,0)Nivel a<br>
+                                        <input type="radio" name="aspect" value="op2"> (0,3)Nivel b
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        
+            
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    </body>
+</html>
